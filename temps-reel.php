@@ -23,7 +23,7 @@
 
 		$line = substr($lines[142], 39, 20);
 		$p = strpos($line, '<');
-		$line = substr($line, 0, $p)
+		$line = substr($line, 0, $p);
 		if ($line == "n/a")
 		{
 			$tempAir = "";
@@ -35,7 +35,7 @@
 				
 		$line = substr($lines[159], 39, 20);
 		$p = strpos($line, '<');
-		$line = substr($line, 0, $p)		
+		$line = substr($line, 0, $p);		
 		if ($line == "n/a")
 		{
 			$tempEau = "";
