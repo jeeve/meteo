@@ -21,6 +21,18 @@
 			$vitesseVent = $line;
 		}
 
+		$line = substr($lines[226], 39, 20);
+		$p = strpos($line, '<');
+		$line = substr($line, 0, $p);
+		if ($line == "n/a")
+		{
+			$orientationVent = "";
+		}
+		else
+		{
+			$orientationVent = $line;
+		}
+		
 		$line = substr($lines[142], 39, 20);
 		$p = strpos($line, '<');
 		$line = substr($line, 0, $p);
@@ -45,7 +57,7 @@
 			$tempEau = $line;
 		}
 
-		$arr = array('vitesseVent' => $vitesseVent, 'temperatureAir' => $tempAir, 'temperatureEau' => $tempEau);
+		$arr = array('vitesseVent' => $vitesseVent, 'orientationVent' => $orientationVent, 'temperatureAir' => $tempAir, 'temperatureEau' => $tempEau);
 
 		echo json_encode($arr);
 ?>
