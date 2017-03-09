@@ -1,5 +1,6 @@
 <?php	
-
+		header("Access-Control-Allow-Origin: *");  
+		
 		$lines = file('http://www.weatherlink.com/user/troislacs/index.php?view=summary&amp;headers=1');
 
 		$line = substr($lines[251], 39, 3);
