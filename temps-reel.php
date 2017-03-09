@@ -1,7 +1,7 @@
 <?php	
 		header("Access-Control-Allow-Origin: *");
 
-		$station = '2213';
+		$station = 'vieuxrouenbresle';
 
 		if ($_GET['station'] != '') {
 				$station = $_GET['station'];
@@ -16,7 +16,7 @@
 		}
 		else
 		{
-			$vitesseVent = substr($lines[250], 39, 4);
+			$vitesseVent = substr($lines[250], 39, 6);
 		}
 
 		$line = substr($lines[142], 39, 3);
@@ -26,7 +26,7 @@
 		}
 		else
 		{
-			$tempAir = substr($lines[142], 39, 4);
+			$tempAir = substr($lines[142], 39, 6);
 		}
 				
 		$line = substr($lines[159], 39, 3);
