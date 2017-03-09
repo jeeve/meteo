@@ -1,7 +1,7 @@
 <?php	
 		header("Access-Control-Allow-Origin: *");
 
-		$station = 'vieuxrouenbresle';
+		$station = 'troislacs';
 
 		if ($_GET['station'] != '') {
 				$station = $_GET['station'];
