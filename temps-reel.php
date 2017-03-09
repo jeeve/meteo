@@ -18,7 +18,7 @@
 		}
 		else
 		{
-			$vitesseVent = substr($lines[250], 39, 6);
+			$vitesseVent = $line;
 		}
 
 		$line = substr($lines[142], 39, 3);
