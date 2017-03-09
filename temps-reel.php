@@ -18,27 +18,31 @@
 		}
 		else
 		{
-			$vitesseVent = str_replace($line, "\\", "");
+			$vitesseVent = $line;
 		}
 
-		$line = substr($lines[142], 39, 3);
+		$line = substr($lines[142], 39, 20);
+		$p = strpos($line, '<');
+		$line = substr($line, 0, $p)
 		if ($line == "n/a")
 		{
 			$tempAir = "";
 		}
 		else
 		{
-			$tempAir = substr($lines[142], 39, 6);
+			$tempAir = $line;
 		}
 				
-		$line = substr($lines[159], 39, 3);
+		$line = substr($lines[159], 39, 20);
+		$p = strpos($line, '<');
+		$line = substr($line, 0, $p)		
 		if ($line == "n/a")
 		{
 			$tempEau = "";
 		}
 		else
 		{
-			$tempEau = substr($lines[159], 39, 6);
+			$tempEau = $line;
 		}
 
 		$arr = array('vitesseVent' => $vitesseVent, 'temperatureAir' => $tempAir, 'temperatureEau' => $tempEau);
