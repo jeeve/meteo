@@ -23,14 +23,14 @@
 			$tempAir = substr($lines[143], 39, 4);
 		}
 				
-		$line = substr($lines[160], 39, 3);
+		$line = substr($lines[159], 39, 3);
 		if ($line == "n/a")
 		{
 			$tempEau = "";
 		}
 		else
 		{
-			$tempEau = substr($lines[160], 39, 6);
+			$tempEau = substr($lines[159], 39, 6);
 		}
 
 		$arr = array('vitesseVent' => $vitesseVent, 'temperatureAir' => $tempAir, 'temperatureEau' => $tempEau);
