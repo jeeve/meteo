@@ -18,7 +18,7 @@
 		}
 		else
 		{
-			$vitesseVent = $line;
+			$vitesseVent = str_replace($line, '\', '');
 		}
 
 		$line = substr($lines[142], 39, 3);
