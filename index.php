@@ -4,9 +4,9 @@
 	</head>
 	<body>
 		<p>
-		<a href="temps-reel.php">Web service météo https://meteo-station.herokuapp.com/temps-reel.php?station=[station]</a>
+		Web service météo temps réel via weatherlink <a href="temps-reel.php">https://meteo-station.herokuapp.com/temps-reel.php?station=[station]</a>
 		<p>
-		<a href="http://www.weatherlink.com/map.php">Liste des station</a>
+		<a href="http://www.weatherlink.com/map.php">Liste des stations</a>
 		</p>
 	</body>
 </html>	
