@@ -57,7 +57,7 @@
 			$tempEau = $line;
 		}
 
-		$arr = array('vitesseVent' => $vitesseVent, 'orientationVent' => $orientationVent, 'temperatureAir' => $tempAir, 'temperatureEau' => $tempEau);
+		$arr = array('station' => $station, 'vitesseVent' => $vitesseVent, 'orientationVent' => $orientationVent, 'temperatureAir' => $tempAir, 'temperatureEau' => $tempEau);
 
 		echo json_encode($arr);
 ?>
