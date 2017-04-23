@@ -23,5 +23,6 @@ $context  = stream_context_create($opts);
 
 $result = file_get_contents('http://mywindstats.com/windrose', false, $context);
 
+echo 'toto';
 echo $result;
 ?>
