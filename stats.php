@@ -4,7 +4,7 @@ header("Access-Control-Allow-Origin: *");
 $postdata = http_build_query(
     array(
         'S_Spot' => 'Lery-Poses',
-        'S_SelectedDate' => '2015-04-13',
+        'S_SelectedDate' => '2017-04-22',
 		'S_StartHour' => '13:00',
 		'S_EndHour' => '17:00',
 		'S_Unit' => 'noeud'
