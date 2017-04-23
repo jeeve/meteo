@@ -20,6 +20,6 @@ if ($response === false)
 throw new Exception("Problem reading data from $sUrl, $php_errormsg");
 }
 
-echo 'toto';
-echo $response;
+echo 'titi';
+echo htmlentities($response);
 ?>
