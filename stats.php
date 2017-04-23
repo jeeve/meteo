@@ -1,0 +1,26 @@
+<?php
+header("Access-Control-Allow-Origin: *");
+
+$postdata = http_build_query(
+    array(
+        'S_Spot' => 'Lery-Poses',
+        'S_SelectedDate' => '2015-04-13',
+		'S_StartHour' => '13:00',
+		'S_EndHour' => '17:00'
+    )
+);
+
+$opts = array('http' =>
+    array(
+        'method'  => 'POST',
+        'header'  => 'Content-type: application/x-www-form-urlencoded',
+        'content' => $postdata
+    )
+);
+
+$context  = stream_context_create($opts);
+
+$result = file_get_contents('http://mywindstats.com/windrose', false, $context);
+
+echo $result;
+?>
