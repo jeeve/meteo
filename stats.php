@@ -6,7 +6,8 @@ $postdata = http_build_query(
         'S_Spot' => 'Lery-Poses',
         'S_SelectedDate' => '2015-04-13',
 		'S_StartHour' => '13:00',
-		'S_EndHour' => '17:00'
+		'S_EndHour' => '17:00',
+		'S_Unit' => 'noeud'
     )
 );
 
