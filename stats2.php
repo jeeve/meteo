@@ -11,15 +11,17 @@ $ctx = stream_context_create($params);
 $fp = @fopen($sUrl, 'rb', false, $ctx);
 if (!$fp)
 {
-throw new Exception("Problem with $sUrl, $php_errormsg");
+    echo "Problem with";
+//throw new Exception("Problem with $sUrl, $php_errormsg");
 }
 
 $response = @stream_get_contents($fp);
 if ($response === false) 
 {
-throw new Exception("Problem reading data from $sUrl, $php_errormsg");
+    echo "Problem reading data from";
+//throw new Exception("Problem reading data from $sUrl, $php_errormsg");
 }
 
-echo 'titi';
-echo htmlentities($response);
+echo $response;
+echo "titi";
 ?>
