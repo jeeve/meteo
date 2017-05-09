@@ -8,7 +8,7 @@ if ($_GET['graph'] == 'vitesse')
 }
 else
 {
-    $graphique = 'Rose des vents';
+    $graphique = '   Rose des vents   ';
     $urlGraph = 'windrose';
 }
 
