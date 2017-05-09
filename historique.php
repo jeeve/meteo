@@ -45,5 +45,7 @@ curl_close($ch);
 $imgplus = stristr($ret, '<img');
 $img = substr($imgplus, 0,  strpos($imgplus, '/>')+2);
 
-echo $img;
+$src = substr($img, 7,  strpos($img, '/>')-3);
+
+echo $src;
 ?>
