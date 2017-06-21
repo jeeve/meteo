@@ -16,6 +16,14 @@ $dateSelctionnee = $_GET['date'];// date('y-m-a', $_GET['date']);
 $heureDebut = $_GET['heure-debut'];
 $heureFin = $_GET['heure-fin'];
 
+if (strlen($heureDebut) == 1) {
+		$heureDebut = "0" . $heureDebut;
+}
+
+if (strlen($heureFin) == 1) {
+		$heureFin = "0" . $heureFin;
+}
+
 // Données à envoyer
 $post = array(
         'S_Spot' => 'Lery-Poses',
