@@ -21,7 +21,7 @@
 			$vitesseVent = $line;
 		}
 
-		$line = substr($lines[226], 39, 20);
+		$line = substr($lines[225], 39, 20);
 		$p = strpos($line, '<');
 		$line = substr($line, 0, $p);
 		if ($line == "n/a")
