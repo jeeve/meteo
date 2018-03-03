@@ -45,7 +45,7 @@
 			$tempAir = $line;
 		}
 				
-		$line = substr($lines[159], 39, 20);
+		$line = substr($lines[304], 39, 20);
 		$p = strpos($line, '<');
 		$line = substr($line, 0, $p);		
 		if ($line == "n/a")
