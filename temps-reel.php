@@ -33,7 +33,7 @@
 			$orientationVent = $line;
 		}
 		
-		$line = substr($lines[142], 39, 20);
+		$line = substr($lines[141], 39, 20);
 		$p = strpos($line, '<');
 		$line = substr($line, 0, $p);
 		if ($line == "n/a")
@@ -45,7 +45,7 @@
 			$tempAir = $line;
 		}
 				
-		$line = substr($lines[306], 39, 20);
+		$line = substr($lines[305], 39, 20);
 		$p = strpos($line, '<');
 		$line = substr($line, 0, $p);		
 		if ($line == "n/a")
