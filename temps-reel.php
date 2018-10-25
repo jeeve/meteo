@@ -31,7 +31,8 @@
 			$vitesseVent = $line;
 		}
 
-		$line = substr($lines[225], 39, 20);
+		//$line = substr($lines[225], 39, 20);
+		$line = substr($lines[getLigne($lines, "Wind Direction") + 2], 39, 20);
 		$p = strpos($line, '<');
 		$line = substr($line, 0, $p);
 		if ($line == "n/a")
@@ -43,7 +44,8 @@
 			$orientationVent = $line;
 		}
 		
-		$line = substr($lines[141], 39, 20);
+		//$line = substr($lines[141], 39, 20);
+		$line = substr($lines[getLigne($lines, "Outside Temp") + 2], 39, 20);
 		$p = strpos($line, '<');
 		$line = substr($line, 0, $p);
 		if ($line == "n/a")
@@ -55,7 +57,8 @@
 			$tempAir = $line;
 		}
 				
-		$line = substr($lines[303], 39, 20);
+		//$line = substr($lines[303], 39, 20);
+		$line = substr($lines[getLigne($lines, "Soil Temp 2") + 2], 39, 20);
 		$p = strpos($line, '<');
 		$line = substr($line, 0, $p);		
 		if ($line == "n/a")
