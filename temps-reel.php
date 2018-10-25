@@ -3,7 +3,7 @@
 
 		function getLigne($tableau, $terme) {
 			for ($i = 0; $i < count($tableau); $i++) {
-				if (strpos($tableau[$i], $terme) {
+				if (strpos($tableau[$i], $terme)) {
 					return $i;
 				}
 			}
