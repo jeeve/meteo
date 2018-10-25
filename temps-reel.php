@@ -2,7 +2,7 @@
 		header("Access-Control-Allow-Origin: *");
 
 		function getLigne($tableau, $terme) {
-			for (i = 0; i < $tableau.length; i++) {
+			for (i = 0; i < count($tableau); i++) {
 				if (strpos($tableau[i], $terme) {
 					return i;
 				}
