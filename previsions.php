@@ -3,6 +3,7 @@
 </head>
 <body>
 <?php
+	header("Access-Control-Allow-Origin: *");
 	$station = '581';
 	$id = 'wg_fwdg_581_3_1544618768813';
 		if ($_GET['station'] != '') {
