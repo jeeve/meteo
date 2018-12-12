@@ -4,7 +4,7 @@
 <body>
 <?php
 	$station = '581';
-	$id = 'wg_fwdg_581_3_1544556198330';
+	$id = 'wg_fwdg_581_3_1544618768813';
 		if ($_GET['station'] != '') {
 				$station = $_GET['station'];
 		}
