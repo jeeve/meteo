@@ -17,7 +17,7 @@
 <script id="<?php echo $id; ?>">
 (function (window, document) {
   var loader = function () {
-    var arg = ["s=<?php echo $station; ?>","m=3","uid=<?php echo $id; ?>","wj=knots","tj=c","odh=0","doh=24","fhours=240","vt=forecasts",
+    var arg = ["s=<?php echo $station; ?>","m=3","uid=<?php echo $id; ?>","wj=knots","tj=c","odh=8","doh=20","fhours=240","vt=forecasts",
    "p=WINDSPD,GUST,MWINDSPD,SMER,TMPE,FLHGT,CDC,APCPs,RATING"];
     var script = document.createElement("script");
     var tag = document.getElementsByTagName("script")[0];
