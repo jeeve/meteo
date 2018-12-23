@@ -15,7 +15,7 @@
 
     $line = $lines[getLigne($lines, "src: 'https://filmssite.viewsurf.com/sapn/HEUDEBOUVILLE_S1_MKV/")];
 
-	echo $line . '<br>';
+//	echo $line . '<br>';
 	
 	$line2 = substr($line, 14, strlen($line) - 17);
 	
