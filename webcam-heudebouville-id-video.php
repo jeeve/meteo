@@ -17,7 +17,7 @@
 
 	echo $line . '<br>';
 	
-	$line2 = substr($line, 14, strlen($line) - 18);
+	$line2 = substr($line, 14, strlen($line) - 16);
 	
 	echo $line2;
 	
