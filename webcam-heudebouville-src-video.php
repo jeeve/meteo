@@ -19,6 +19,8 @@
 	
 	$line2 = substr($line, 14, strlen($line) - 17);
 	
-	echo $line2;
+	$arr = array('src' => $line2);
+	
+	echo json_encode($arr);
 	
 ?>	
