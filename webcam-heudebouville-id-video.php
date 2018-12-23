@@ -14,6 +14,8 @@
 	$lines = file('https://www.viewsurf.com/univers/trafic/vue/3254-france-haute-normandie-heudebouville-a13-pres-de-louviers-peage-de-heudebouville-vue-orientee-vers-le-havre-ou-caen');
 
     $line = $lines[getLigne($lines, "src: 'https://filmssite.viewsurf.com/sapn/HEUDEBOUVILLE_S1_MKV/")];
+
+	echo $line;
 	
 	$line = substr($line, 6, strlen($line) - 9);
 	
