@@ -6,6 +6,8 @@ $allowed_domains = [
     'https://herokuapp.com'
 ];
 
+echo 'toto;';
+
 if (in_array($origin, $allowed_domains)) {
     header('Access-Control-Allow-Origin: ' . $origin);
 }
