@@ -23,7 +23,7 @@
 		
 		//$json = file_get_contents('https://www.weatherlink.com/map/data/station/' . $station);
 		
-		$json = get_url(https://www.weatherlink.com/map/data/station/' . $station);
+		$json = get_url('https://www.weatherlink.com/map/data/station/' . $station);
 		
 		echo $json;
 ?>
