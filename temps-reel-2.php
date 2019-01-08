@@ -1,9 +1,7 @@
 <?php	
-//		header("Access-Control-Allow-Origin: *");
+	header("Access-Control-Allow-Origin: *");
 
-    header('Access-Control-Allow-Origin: https://meteo-station.herokuapp.com');
-	
-		$station = '33782285-df4e-4432-a3b3-06ddf1b3680a';
+  		$station = '33782285-df4e-4432-a3b3-06ddf1b3680a';
 
 		if ($_GET['station'] != '') {
 				$station = $_GET['station'];
