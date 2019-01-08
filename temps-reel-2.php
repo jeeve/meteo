@@ -3,7 +3,7 @@
 
 $origin = $_SERVER['HTTP_ORIGIN'];
 $allowed_domains = [
-    'https://meteo-station.herokuapp.com'
+    'https://herokuapp.com'
 ];
 
 if (in_array($origin, $allowed_domains)) {
