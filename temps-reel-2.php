@@ -7,7 +7,7 @@
 		curl_setopt($curl, CURLOPT_HTTPHEADER, array('Content-Type: application/json', 'Accept: application/json'));
 		curl_setopt($curl, CURLOPT_URL, $url);
     	//curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
-    	curl_setopt($curl, CURLOPT_HEADER, true);
+    	//curl_setopt($curl, CURLOPT_HEADER, true);
     	$page = curl_exec($curl);
     	$error = curl_errno($curl);
     	curl_close($curl);
