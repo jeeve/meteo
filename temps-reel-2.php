@@ -1,16 +1,7 @@
 <?php	
 //		header("Access-Control-Allow-Origin: *");
 
-$origin = $_SERVER['HTTP_ORIGIN'];
-$allowed_domains = [
-    'https://herokuapp.com'
-];
-
-echo 'toto;';
-
-if (in_array($origin, $allowed_domains)) {
-    header('Access-Control-Allow-Origin: ' . $origin);
-}
+    header('Access-Control-Allow-Origin: https://ctif.com);
 	
 		$station = '33782285-df4e-4432-a3b3-06ddf1b3680a';
 
