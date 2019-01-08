@@ -1,5 +1,5 @@
 <?php	
-	header("Access-Control-Allow-Origin: *");
+	header("Access-Control-Allow-Origin: https://www.weatherlink.com");
 
      function get_url($url) {
     	$curl = curl_init();
